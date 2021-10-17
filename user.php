@@ -35,26 +35,33 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <div class="container my-5">
-        <form method="POST">
-            <div class="mb-3">
-                <label>Nama</label>
-                <input type="text" class="form-control" autocomplete="off" name="nama">
+    <div class="container">
+        <div class="row">
+            <div class="col-5 h-100">
+                <form class="my-auto" method="POST">
+                    <div class="mb-3">
+                        <label>Nama</label>
+                        <input type="text" class="form-control" autocomplete="off" name="nama">
+                    </div>
+                    <div class="mb-3">
+                        <label>Nomor Induk Mahasiswa</label>
+                        <input type="text" class="form-control" autocomplete="off" name="nim">
+                    </div>
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input type="text" class="form-control" autocomplete="off" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label>Password</label>
+                        <input type="password" class="form-control" autocomplete="off" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                </form>
             </div>
-            <div class="mb-3">
-                <label>Nomor Induk Mahasiswa</label>
-                <input type="text" class="form-control" autocomplete="off" name="nim">
+            <div class="col-7">
+                <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1579441401150-731d2a86d961?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80">
             </div>
-            <div class="mb-3">
-                <label>Email</label>
-                <input type="text" class="form-control" autocomplete="off" name="email">
-            </div>
-            <div class="mb-3">
-                <label>Password</label>
-                <input type="password" class="form-control" autocomplete="off" name="password">
-            </div>
-            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
-        </form>
+        </div>
     </div>
 </body>
 

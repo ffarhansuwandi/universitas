@@ -22,7 +22,7 @@ include("connection.php");
 <body>
     <div class="container my-5">
         <button class="btn btn-success"><a class="text-light text-decoration-none" href="user.php">Add User</a></button>
-        <table class="table my-5">
+        <table class="table table-borderless my-5">
             <thead class="thead-light">
                 <tr>
                     <th scope="col">Id</th>
