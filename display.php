@@ -13,6 +13,10 @@ include("connection.php");
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- Awesome Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles.css">
 
@@ -21,11 +25,11 @@ include("connection.php");
 
 <body>
     <div class="container my-5">
-        <button class="btn btn-success"><a class="text-light text-decoration-none" href="user.php">Add User</a></button>
-        <table class="table table-borderless my-5">
+        <button class="btn btn-success"><a class="text-light text-decoration-none" href="user.php"><span><i class="fas fa-plus me-2"></i></span>Add Users</a></button>
+        <table class="table my-5">
             <thead class="thead-light">
                 <tr>
-                    <th scope="col">Id</th>
+                    <th scope="col">ID</th>
                     <th scope="col">Nama</th>
                     <th scope="col">Nomor Induk Mahasiswa</th>
                     <th scope="col">Email</th>
@@ -45,15 +49,15 @@ include("connection.php");
                         $email = $row['email'];
                         $password = $row['password'];
 
-                        echo '<tr>
+                        echo '<tr class="align-middle">
                     <th scope="row">' . $id . '</th>
-                    <td>' . $nim . '</td>
+                    <td class="align-items-center">' . $nim . '</td>
                     <td>' . $nama . '</td>
                     <td>' . $email . '</td>
                     <td>' . $password . '</td>
                     <td>
-                    <button class="btn btn-primary"><a class="text-light text-decoration-none" href="update.php?updateid=' . $id . '">Update</a></button>
-                    <button class="btn btn-danger"><a class="text-light text-decoration-none" href="delete.php?deleteid=' . $id . '">Delete</a></button>
+                    <button class="btn btn-primary"><a class="text-light text-decoration-none" href="update.php?updateid=' . $id . '"><span><i class="fas fa-pen me-2"></i></span>Update</a></button>
+                    <button class="btn btn-danger"><a class="text-light text-decoration-none" href="delete.php?deleteid=' . $id . '"><span><i class="fas fa-trash me-2"></i></span>Delete</a></button>
                     </td>
                     </tr>';
                     }
